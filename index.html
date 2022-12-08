@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <h2 id="tag" style="color: #666;"> ADD PRODUCT DETAILS </h2>
+            <div class="head">
+                <div class="A">
+                    <label id="tag">TITLE :</label>
+                    <input class="bars" id="title" type="text" name="TITLE" autocomplete="off" maxlength="31"
+                        onkeypress="return IsCharacter(event);" />
+                    <center>
+                        <span id="error" class="error"></span>
+                    </center>
+                    <label id="tag">DESCRIPTION :</label>
+                    <textarea type="text" id="desc" autocomplete="off" class="bars" maxlength="501"> </textarea>
+                    <span id="error3" class="error"></span>
+                    <label id="tag">PRICE :</label>
+                    <input class="bars" id="price" type="number" name="PRICE" autocomplete="off"
+                        onkeypress="return IsCharacter1(event)" />
+                    <center>
+                        <span id="error2" class="error"></span>
+                    </center>
+                    <button class="butt" id="ad" onclick="call()">ADD</button>
+                    <button class="butt" id="ad" onclick="remove()">Remove</button>
+                    <button class="butt1" id="up" onclick="update()">update</button>
+                </div>
+            </div>
+        </div>
+<div id="cards">
+<!-- <div  class="card"> 
+<i class="fa-solid fa-ellipsis-vertical"></i>
+   <h3> TITLE </h3>
+   <p> a piece of thick, stiff paper or thin pasteboard, in particular one used for writing or printing on.</p>    
+   <h3> DESC </h3>
+   <p> a piece of thick, stiff paper or thin pasteboard, in particular one used for writing or printing on..................................</p>
+   <h3>PRICE</h3>
+   <p> a piece of thick, stiff paper or thin pasteboard, in particular one used for writing or printg on..................................</p>
+<div class="like5">
+<i class="fa-regular fa-thumbs-up" id="${index}" onclick="like(this.id)"></i>
+<i class="fa-solid fa-message"></i>
+</div>
+<div class="comments">
+    <input type="text" name="" id="comment">
+    <i class="fa-solid fa-message"></i>
+</div>
+<div class="s" id="s1">
+    <p id="e1">EDIT </p>
+    <p id="e2"> VIEW</p>
+    <p id="e3">DELETE</p>
+    </div>
+</div>        </div> -->
+        </div>
+  <script src="work.js"> </script>
+</body>
+</html>
